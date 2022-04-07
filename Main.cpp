@@ -37,7 +37,8 @@ int main() {
   const int CITY = 2;
   const int WEEK = 7;
 
-  int temperature[CITY][WEEK];
+  int temperature[CITY][WEEK];	//Array for 1st pass from Dr. T
+	int temperatureOfCombinedArrays[CITY][WEEK];	//Array from combined single arrays
 
 	int cityOne[WEEK];	//Array for Pensacola temperatures
 	int cityTwo[WEEK];	//Array for Fort Worth temperatures
@@ -90,5 +91,26 @@ int main() {
 			cout << "Please enter the temperature for day " << i + 1 << " of the second city: ";
 			cin >> cityTwo[i];
 		}
-  return 0;
+
+	for(int i = 0; i < CITY; i++)
+		{
+			for(int j = 0; j < WEEK; j++)
+				{
+					temperatureOfCombinedArrays[i][j] = cityOne[i];
+					temperatureOfCombinedArrays[i][j] = cityTwo[j];
+				}
+		}
+
+
+	  cout << "\n\nDisplaying Values:\n";
+
+  // Accessing the values from the temperature array
+  for (int i = 0; i < CITY; ++i) {
+    for (int j = 0; j < WEEK; ++j) {
+      cout << "City " << i + 1 << ", Day " << j + 1 << " = "
+           << temperatureOfCombinedArrays[i][j] << endl;
+    }
+  }
+
+	return 0;
 }
