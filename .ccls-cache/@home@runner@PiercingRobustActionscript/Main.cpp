@@ -17,20 +17,20 @@ program.
 your cities
 //Data Table
 //City X, Day X: Temp
-City 1, Day 1: TEMP
-City 1, Day 2: TEMP
-City 1, Day 3: TEMP
-City 1, Day 4: TEMP
-City 1, Day 5: TEMP
-City 1, Day 6: TEMP
-City 1, Day 7: TEMP
-City 2, Day 1: TEMP
-City 2, Day 2: TEMP
-City 2, Day 3: TEMP
-City 2, Day 4: TEMP
-City 2, Day 5: TEMP
-City 2, Day 6: TEMP
-City 2, Day 7: TEMP
+Pensacola, Day 1: 75
+Pensacola, Day 2: 71
+Pensacola, Day 3: 71
+Pensacola, Day 4: 74
+Pensacola, Day 5: 76
+Pensacola, Day 6: 78
+Pensacola, Day 7: 79
+Fort Worth, Day 1: 70
+Fort Worth, Day 2: 71
+Fort Worth, Day 3: 87
+Fort Worth, Day 4: 87
+Fort Worth, Day 5: 86
+Fort Worth, Day 6: 89
+Fort Worth, Day 7: 77
 */
 
 int main() {
