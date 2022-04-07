@@ -38,6 +38,9 @@ int main() {
   const int WEEK = 7;
 
   int temperature[CITY][WEEK];
+
+	int cityOne[WEEK];	//Array for Pensacola temperatures
+	int cityTwo[WEEK];	//Array for Fort Worth temperatures
   // Note your input data from the above
   cout << "Enter all temperature for a week of first city and then second "
           "city. \n";
@@ -73,5 +76,19 @@ int main() {
      4. print the results of temperature[i][j]; to the screen.
    */
 
+	//Loop to input data for City 1 which is Pensacola, FL
+	for(int i = 0; i < WEEK; i++)
+		{
+			cout << "Please enter the temperature for day " << i + 1 << " of the first city: ";
+			cin >> cityOne[i];
+		}
+
+	cout << endl << endl;
+		//Loop to input data for City 2 which is Fort Worth, TX
+	for(int i = 0; i < WEEK; i++)
+		{
+			cout << "Please enter the temperature for day " << i + 1 << " of the second city: ";
+			cin >> cityTwo[i];
+		}
   return 0;
 }
